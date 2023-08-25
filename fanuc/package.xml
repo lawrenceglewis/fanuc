@@ -14,18 +14,24 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>fanuc_cr35ia_support</exec_depend>
+  <exec_depend>fanuc_driver</exec_depend>
+  <exec_depend>fanuc_resources</exec_depend>
+  <exec_depend>R-2000iB165F.SLDASM</exec_depend>
+
+  <!--<exec_depend>fanuc_cr35ia_support</exec_depend>
   <exec_depend>fanuc_cr7ia_moveit_config</exec_depend>
   <exec_depend>fanuc_cr7ia_support</exec_depend>
   <exec_depend>fanuc_cr7ial_moveit_config</exec_depend>
-  <exec_depend>fanuc_driver</exec_depend>
+  
   <exec_depend>fanuc_lrmate200i_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200i_moveit_plugins</exec_depend>
   <exec_depend>fanuc_lrmate200i_support</exec_depend>
+
   <exec_depend>fanuc_lrmate200ib3l_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200ib_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200ib_moveit_plugins</exec_depend>
   <exec_depend>fanuc_lrmate200ib_support</exec_depend>
+
   <exec_depend>fanuc_lrmate200ic5h_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200ic5l_moveit_config</exec_depend>
   <exec_depend>fanuc_lrmate200ic_moveit_config</exec_depend>
@@ -60,11 +66,11 @@
   <exec_depend>fanuc_m900ib_support</exec_depend>
   <exec_depend>fanuc_r1000ia80f_moveit_config</exec_depend>
   <exec_depend>fanuc_r1000ia_moveit_plugins</exec_depend>
-  <exec_depend>fanuc_r1000ia_support</exec_depend>
-  <exec_depend>fanuc_resources</exec_depend>
+  <exec_depend>fanuc_r1000ia_support</exec_depend> -->
+  
 
   <export>
-    <metapackage/>
+    <build_type>ament_cmake</build_type>
     <architecture_independent/>
     <rosindex>
       <tags>
@@ -77,8 +83,5 @@
     <ros_industrial>
       <support_level value="community" />
     </ros_industrial>
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
   </export>
 </package>

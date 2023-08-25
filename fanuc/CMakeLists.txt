@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(fanuc)
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
 #catkin_metapackage() unfortunatly in ros2 ament doesn't allow you to group packages. What really should be done is replace catkin_metapackage with ament_metapackage.
 #Only using one robot right now so i only required the R-2000iB165F.SLDASM if you want the other ones include them.
 find_package(fanuc_driver REQUIRED)

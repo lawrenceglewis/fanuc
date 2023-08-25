@@ -17,5 +17,6 @@ for R-2000iB165F.SLDASM robot</p>
   <depend>gazebo</depend>
   <export>
     <architecture_independent />
+    <build_type>ament_cmake</build_type>
   </export>
 </package>

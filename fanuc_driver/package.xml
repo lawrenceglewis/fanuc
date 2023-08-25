@@ -32,6 +32,7 @@
   <test_depend>roslaunch</test_depend>
 
   <export>
+    <build_type>ament_cmake</build_type>
     <rosindex>
       <tags>
         <tag>driver</tag>
@@ -47,8 +48,5 @@
     <ros_industrial>
       <support_level value="community" />
     </ros_industrial>
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
   </export>
 </package>

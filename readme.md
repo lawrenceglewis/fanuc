@@ -1,4 +1,4 @@
-# Fanuc
+# Fanuc ROS2
 
 [![Build Status: Ubuntu Bionic (Actions)](https://github.com/ros-industrial/fanuc/workflows/CI%20-%20Ubuntu%20Bionic/badge.svg?branch=melodic-devel)](https://github.com/ros-industrial/fanuc/actions?query=workflow%3A%22CI+-+Ubuntu+Bionic%22)
 [![Github Issues](https://img.shields.io/github/issues/ros-industrial/fanuc.svg)](http://github.com/ros-industrial/fanuc/issues)
