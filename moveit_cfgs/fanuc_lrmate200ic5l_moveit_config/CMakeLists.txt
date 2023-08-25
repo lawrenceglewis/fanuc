@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(fanuc_lrmate200ic5l_moveit_config)
 
-find_package(catkin REQUIRED)
+find_package(ament_cmake REQUIRED)
 
 catkin_package()
 

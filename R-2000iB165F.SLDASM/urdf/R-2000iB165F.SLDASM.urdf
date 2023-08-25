@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="R-2000iB165F.SLDASM">
+  <link
+    name="robot_base">
+    <inertial>
+      <origin
+        xyz="-0.037913 -0.00035409 0.13141"
+        rpy="0 0 0" />
+      <mass
+        value="240.16" />
+      <inertia
+        ixx="6.9265"
+        ixy="0.0029211"
+        ixz="-0.22527"
+        iyy="10.458"
+        iyz="0.0032127"
+        izz="13.918" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/robot_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/robot_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="J1">
+    <inertial>
+      <origin
+        xyz="0.11566 0.028802 -0.15599"
+        rpy="0 0 0" />
+      <mass
+        value="216.29" />
+      <inertia
+        ixx="10.499"
+        ixy="0.93109"
+        ixz="-2.7475"
+        iyy="14.027"
+        iyz="0.24049"
+        izz="13.186" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="revolute">
+    <origin
+      xyz="0 -0.67 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="robot_base" />
+    <child
+      link="J1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J2">
+    <inertial>
+      <origin
+        xyz="0.047498 0.23751 0.45078"
+        rpy="0 0 0" />
+      <mass
+        value="163.48" />
+      <inertia
+        ixx="20.011"
+        ixy="-0.052093"
+        ixz="-0.46193"
+        iyy="20.566"
+        iyz="-2.14"
+        izz="2.189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="revolute">
+    <origin
+      xyz="0.312 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="J1" />
+    <child
+      link="J2" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J3">
+    <inertial>
+      <origin
+        xyz="0.22123 0.031267 0.12371"
+        rpy="0 0 0" />
+      <mass
+        value="168.49" />
+      <inertia
+        ixx="4.6025"
+        ixy="0.98493"
+        ixz="-2.7095"
+        iyy="18.061"
+        iyz="0.65211"
+        izz="16.606" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="revolute">
+    <origin
+      xyz="0 0 1.075"
+      rpy="0 0 0" />
+    <parent
+      link="J2" />
+    <child
+      link="J3" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J4">
+    <inertial>
+      <origin
+        xyz="-0.094338 -0.0022789 -5.998E-06"
+        rpy="0 0 0" />
+      <mass
+        value="7.6244" />
+      <inertia
+        ixx="0.017089"
+        ixy="0.0020427"
+        ixz="2.0844E-06"
+        iyy="0.057083"
+        iyz="-2.1589E-06"
+        izz="0.056974" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="revolute">
+    <origin
+      xyz="1.28 0 0.225"
+      rpy="0 0 0" />
+    <parent
+      link="J3" />
+    <child
+      link="J4" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J5">
+    <inertial>
+      <origin
+        xyz="0.056039 -0.033997 3.6295E-05"
+        rpy="0 0 0" />
+      <mass
+        value="16.042" />
+      <inertia
+        ixx="0.1244"
+        ixy="-0.031648"
+        ixz="6.1651E-05"
+        iyy="0.1226"
+        iyz="2.2313E-05"
+        izz="0.18271" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="revolute">
+    <origin
+      xyz="0 0.01 0"
+      rpy="0 0 0" />
+    <parent
+      link="J4" />
+    <child
+      link="J5" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="J6">
+    <inertial>
+      <origin
+        xyz="2.2204E-16 -1.5866E-17 0.020883"
+        rpy="0 0 0" />
+      <mass
+        value="1.9762" />
+      <inertia
+        ixx="0.0035321"
+        ixy="-1.2835E-19"
+        ixz="-1.1492E-18"
+        iyy="0.0035106"
+        iyz="-1.5422E-18"
+        izz="0.0065595" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://R-2000iB165F.SLDASM/meshes/J6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="revolute">
+    <origin
+      xyz="0.215 -0.01 0"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="J5" />
+    <child
+      link="J6" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

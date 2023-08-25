@@ -38,7 +38,7 @@
   <url type="bugtracker">https://github.com/ros-industrial/fanuc/issues</url>
   <url type="repository">https://github.com/ros-industrial/fanuc</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>roslaunch</test_depend>
 
@@ -65,5 +65,8 @@
     <ros_industrial>
       <support_level value="community" />
     </ros_industrial>
+  </export>
+  <export>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
